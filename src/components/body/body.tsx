@@ -1,8 +1,8 @@
 import { BodyProps } from '../../types/types';
-
+import "./body.scss"
 const Body= ({ todos, completeTodo, deleteTodo, updateTodo }: BodyProps) => {
   return (
-    <ul className='list'>
+    <ul className='body'>
       {todos.map((todo) => (
         <li key={todo.id}>
           <input 

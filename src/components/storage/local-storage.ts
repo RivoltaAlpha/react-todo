@@ -1,5 +1,5 @@
-import { useEffect, useReducer, Reducer } from 'react';
-import { Todo, Action } from './types/types';
+import { useEffect, useReducer, Reducer } from "react";
+import { Todo, Action } from "../../types/types";
 
 const useLocalStorageReducer = (
   key: string,

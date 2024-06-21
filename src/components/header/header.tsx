@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { HeaderProps } from '../../types/types';
-
+import "./header.scss"
 const Header = ({ addTodo } :HeaderProps) => {
   const [text, setText] = useState('');
 
@@ -13,7 +13,7 @@ const Header = ({ addTodo } :HeaderProps) => {
 
   
   return (
-    <header>
+    <header style={{ backgroundImage: 'url("public/images/bg-desktop-light.jpg")' }}>
       <input 
         type="text" 
         value={text} 
