@@ -1,0 +1,16 @@
+.header{
+    background-image: url(./images/desktop/light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+ input {
+        flex: 1;
+        padding: 8px;
+        margin-right: 8px;
+      }
+}

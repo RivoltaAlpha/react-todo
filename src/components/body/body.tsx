@@ -1,8 +1,8 @@
 import { BodyProps } from '../../types/types';
 
-const Body= ({ todos, completeTodo, deleteTodo, updateTodo } :BodyProps) => {
+const Body= ({ todos, completeTodo, deleteTodo, updateTodo }: BodyProps) => {
   return (
-    <ul>
+    <ul className='list'>
       {todos.map((todo) => (
         <li key={todo.id}>
           <input 
