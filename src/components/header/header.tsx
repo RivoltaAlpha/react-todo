@@ -13,7 +13,7 @@ const Header = ({ addTodo } :HeaderProps) => {
 
   
   return (
-    <header style={{ backgroundImage: 'url("public/images/bg-desktop-light.jpg")' }}>
+    <header style={{  }}>
       <input 
         type="text" 
         value={text} 
