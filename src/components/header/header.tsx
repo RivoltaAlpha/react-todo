@@ -13,7 +13,11 @@ const Header = ({ addTodo } :HeaderProps) => {
 
   
   return (
-    <header style={{  }}>
+    <header>
+      <div className='todo'>
+      <h1>TODO</h1>
+      </div>
+      <div className='input'>
       <input 
         type="text" 
         value={text} 
@@ -21,6 +25,8 @@ const Header = ({ addTodo } :HeaderProps) => {
         placeholder="Add a new task" 
       />
       <button onClick={handleAddTodo}>Add</button>
+      </div>
+
     </header>
   );
 };

@@ -6,7 +6,6 @@
   ul {
     list-style: none;
     padding: 0;
-    border: 10px solid purple;
   }
   
   li {
@@ -41,6 +40,52 @@
     border: none;
     color: white;
     cursor: pointer;
+  }
+  
+  li button:hover {
+    color: #4f5ced;
+  }
+  
+  li:hover {
+    background: #4a4a4a;
+  }
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+     button {
+      background: none;
+      border: 1px solid #6a94e3;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      padding: 10px 15px;
+    }
+    
+     button:hover {
+      background: #fff;
+      color: #3a3a3a;
+    }
+  }
+  
+
+  
+  .clear-completed {
+    background: none;
+    border: 1px solid #0095ff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 150px;
+  }
+  
+  .clear-completed:hover {
+    background: #0033ff;
+    color: white;
   }
   
 }

@@ -22,7 +22,9 @@ const TheApp = () => {
   const updateTodo = (id: number, text: string) => {
     dispatch({ type: "UPDATE_TODO", payload: { id, text } });
   };
-
+  const clearCompleted = () => {
+    dispatch({ type: 'CLEAR_COMPLETED' });
+  };
   return (
     <Wrapper>
       <Header addTodo={addTodo} />
@@ -31,6 +33,7 @@ const TheApp = () => {
         completeTodo={completeTodo}
         deleteTodo={deleteTodo}
         updateTodo={updateTodo}
+        clearCompleted={clearCompleted}
       />
     </Wrapper>
   );

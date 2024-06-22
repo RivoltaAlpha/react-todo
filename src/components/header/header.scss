@@ -3,8 +3,9 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 900px;
   height: 400px;
   margin-bottom: 20px;
@@ -18,18 +19,32 @@ header{
           border-radius: 5px;
           margin-right: 100px;
           margin-left: 100px;
-          width: 200px;
+          width: 300px;
         }
         
          button {
           padding: 20px;
+          width: 90px;
           background-color: #4e4e4e;
           border: none;
           border-radius: 5px;
           color: white;
           cursor: pointer;
-          margin-right: 100px;
+          margin-right: 70px;
         }
-        
+        button:hover {
+          background-color: #5a27c0;
+        }
+     .input{
+      display: flex;
+      flex-direction: row;
+     }   
+     .todo{
+      font-weight: 200;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: large;
+     }
 }
 
