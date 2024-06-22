@@ -1,26 +1,17 @@
 header{
   background-Image: url("/images/bg-desktop-light.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size : cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 900px;
+  width: 1500px;
   height: 400px;
   margin-bottom: 20px;
-  margin-top: 100px;
-  margin-left: 200px;
-  margin-right: 200px;
-         input {
-          flex: 1;
-          padding: 20px;
-          border: none;
-          border-radius: 5px;
-          margin-right: 100px;
-          margin-left: 100px;
-          width: 300px;
-        }
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
         
          button {
           padding: 20px;
@@ -31,13 +22,24 @@ header{
           color: white;
           cursor: pointer;
           margin-right: 70px;
+
+          &:hover {
+            background-color: #5a27c0;
+          }
         }
-        button:hover {
-          background-color: #5a27c0;
-        }
+
      .input{
       display: flex;
       flex-direction: row;
+      input {
+        flex: 1;
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 100px;
+        margin-left: 100px;
+        width: 300px;
+      }
      }   
      .todo{
       font-weight: 200;
@@ -48,3 +50,34 @@ header{
      }
 }
 
+header{
+  @media (max-width: 769px) {
+    width: 98%;
+    height: 300px;
+    margin: 0;
+    padding: 20px;
+    margin-left: 10px;
+
+    .input {
+      flex-direction: column;
+      align-items: center;
+      input {
+        margin: 10px 0;
+        max-width: 100px;
+        padding: 10px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+      button {
+      width: 50px;
+      padding: 10px;
+      max-width: 90px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    }
+    .todo {
+      font-size: 10px;
+    }
+  }
+}
